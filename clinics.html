@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find a Clinic – MedReach SL</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><span>M+</span> MedReach SL</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="clinics.html" class="active">Clinics</a>
+    <a href="medicine.html">Medicine</a>
+    <a href="chw.html">CHWs</a>
+    <a href="news.html">News</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="btn-nav">Login</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="clinics.html" class="active">Clinics</a>
+  <a href="medicine.html">Medicine</a>
+  <a href="chw.html">CHWs</a>
+  <a href="news.html">News</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html" class="btn-nav">Login</a>
+</div>
+
+<main>
+  <div class="page-header">
+    <div class="section-eyebrow">Clinic Locator</div>
+    <h1>Find a clinic near you</h1>
+    <p>Search government, NGO, and community health facilities across all 14 districts of Sierra Leone — with services and approximate distance.</p>
+  </div>
+
+  <section class="section">
+    <div class="search-bar">
+      <input type="text" id="clinicSearch" placeholder="Search by name, service, or district…" />
+      <select id="clinicDistrict"><option value="">All Districts</option></select>
+      <button onclick="searchClinics()">Search</button>
+    </div>
+    <div id="clinic-results" class="item-list"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="nav-logo"><span>M+</span> MedReach SL</div>
+      <p>A Digital Public Good connecting Sierra Leoneans to healthcare — free, open, and built for every community.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Platform</h4>
+      <ul>
+        <li><a href="clinics.html">Find a Clinic</a></li>
+        <li><a href="medicine.html">Medicine Tracker</a></li>
+        <li><a href="chw.html">CHW Directory</a></li>
+        <li><a href="news.html">Health News</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Organisation</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="license.html">License &amp; Privacy</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:info@medreachsl.org">info@medreachsl.org</a></li>
+        <li><a href="tel:+23276000001">+232 76 000 001</a></li>
+        <li><a href="about.html">Freetown, Sierra Leone</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 MedReach SL · A Digital Public Good · Freetown, Sierra Leone</span>
+    <span>Built with HTML, CSS &amp; JavaScript</span>
+  </div>
+</footer>
+
+<button class="chatbot-toggle" onclick="toggleChatbot()" aria-label="Open health assistant">💬</button>
+<div class="chatbot-window" id="chatbotWindow">
+  <div class="chatbot-header"><span>🩺 MedReach Assistant</span><button onclick="toggleChatbot()" aria-label="Close">✕</button></div>
+  <div class="chatbot-messages" id="chatbotMessages"><div class="chat-msg bot">Hi! I'm the MedReach SL health assistant. Ask me about clinics, medicine availability, or community health workers.</div></div>
+  <div class="chat-suggestions">
+    <span class="chat-chip" onclick="sendChatMessage('Find a clinic near me')">Find a clinic</span>
+    <span class="chat-chip" onclick="sendChatMessage('Is malaria medicine available?')">Malaria medicine</span>
+    <span class="chat-chip" onclick="sendChatMessage('How do I register?')">How to register</span>
+  </div>
+  <div class="chatbot-input"><input type="text" id="chatbotInput" placeholder="Type your question..." /><button onclick="sendChatMessage()">Send</button></div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
