@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>License & Privacy – MedReach SL</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><span>M+</span> MedReach SL</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="clinics.html">Clinics</a>
+    <a href="medicine.html">Medicine</a>
+    <a href="chw.html">CHWs</a>
+    <a href="news.html">News</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="btn-nav">Login</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="clinics.html">Clinics</a>
+  <a href="medicine.html">Medicine</a>
+  <a href="chw.html">CHWs</a>
+  <a href="news.html">News</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html" class="btn-nav">Login</a>
+</div>
+
+<main>
+  <div class="page-header">
+    <div class="section-eyebrow">Legal</div>
+    <h1>License &amp; Privacy Policy</h1>
+    <p>How MedReach SL is licensed, and how we handle your information.</p>
+  </div>
+
+  <section class="section legal" style="max-width:720px;">
+    <p class="legal-updated">Last updated: June 2026</p>
+
+    <h2>Open Source License</h2>
+    <p>MedReach SL is released as a Digital Public Good under the MIT License. This means the source code is free to use, copy, modify, and distribute, provided that the original copyright notice and this permission notice are included in all copies or substantial portions of the software.</p>
+    <p>MedReach SL is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors be liable for any claim, damages, or other liability arising from the use of the software.</p>
+
+    <h2>Privacy Policy</h2>
+    <p>MedReach SL is built with privacy as a core principle. We collect the minimum information necessary to provide our services:</p>
+    <ul>
+      <li>Information you provide voluntarily when registering (name, email, phone, district)</li>
+      <li>Messages sent to community health workers through the Contact page</li>
+      <li>General usage data to improve clinic and medicine information accuracy</li>
+    </ul>
+    <p>We do not sell or share your personal data with third parties for advertising purposes. Clinic searches and medicine availability checks can be performed without creating an account.</p>
+
+    <h2>Data Storage</h2>
+    <p>Core information such as clinic locations, medicine availability, and CHW directories is cached locally on your device to allow the platform to function with limited or no internet connectivity.</p>
+
+    <h2>Your Rights</h2>
+    <p>You may request access to, correction of, or deletion of your personal data at any time by contacting us at info@medreachsl.org.</p>
+
+    <h2>Contact</h2>
+    <p>For questions about this policy or the MedReach SL license, please reach out via our <a href="contact.html" style="color:var(--green); font-weight:700;">Contact page</a> or email info@medreachsl.org.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="nav-logo"><span>M+</span> MedReach SL</div>
+      <p>A Digital Public Good connecting Sierra Leoneans to healthcare — free, open, and built for every community.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Platform</h4>
+      <ul>
+        <li><a href="clinics.html">Find a Clinic</a></li>
+        <li><a href="medicine.html">Medicine Tracker</a></li>
+        <li><a href="chw.html">CHW Directory</a></li>
+        <li><a href="news.html">Health News</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Organisation</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="license.html">License &amp; Privacy</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:info@medreachsl.org">info@medreachsl.org</a></li>
+        <li><a href="tel:+23276000001">+232 76 000 001</a></li>
+        <li><a href="about.html">Freetown, Sierra Leone</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 MedReach SL · A Digital Public Good · Freetown, Sierra Leone</span>
+    <span>Built with HTML, CSS &amp; JavaScript</span>
+  </div>
+</footer>
+
+<button class="chatbot-toggle" onclick="toggleChatbot()" aria-label="Open health assistant">💬</button>
+<div class="chatbot-window" id="chatbotWindow">
+  <div class="chatbot-header"><span>🩺 MedReach Assistant</span><button onclick="toggleChatbot()" aria-label="Close">✕</button></div>
+  <div class="chatbot-messages" id="chatbotMessages"><div class="chat-msg bot">Hi! I'm the MedReach SL health assistant. Ask me about clinics, medicine availability, or community health workers.</div></div>
+  <div class="chat-suggestions">
+    <span class="chat-chip" onclick="sendChatMessage('Find a clinic near me')">Find a clinic</span>
+    <span class="chat-chip" onclick="sendChatMessage('Is malaria medicine available?')">Malaria medicine</span>
+    <span class="chat-chip" onclick="sendChatMessage('How do I register?')">How to register</span>
+  </div>
+  <div class="chatbot-input"><input type="text" id="chatbotInput" placeholder="Type your question..." /><button onclick="sendChatMessage()">Send</button></div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

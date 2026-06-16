@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health News & Alerts – MedReach SL</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><span>M+</span> MedReach SL</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="clinics.html">Clinics</a>
+    <a href="medicine.html">Medicine</a>
+    <a href="chw.html">CHWs</a>
+    <a href="news.html" class="active">News</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="btn-nav">Login</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="clinics.html">Clinics</a>
+  <a href="medicine.html">Medicine</a>
+  <a href="chw.html">CHWs</a>
+  <a href="news.html" class="active">News</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html" class="btn-nav">Login</a>
+</div>
+
+<main>
+  <div class="page-header">
+    <div class="section-eyebrow">Health News &amp; Alerts</div>
+    <h1>Stay informed</h1>
+    <p>The latest health advisories, disease outbreak alerts, and platform updates for Sierra Leone.</p>
+  </div>
+
+  <section class="section">
+    <div class="news-grid">
+      <div class="news-card">
+        <span class="news-tag alert">Alert</span>
+        <div class="news-date">June 2026 · Bo &amp; Kenema Districts</div>
+        <h3>Increased malaria cases reported during rainy season</h3>
+        <p>Health authorities report a rise in malaria cases in Bo and Kenema. Residents are advised to use treated mosquito nets and seek early treatment at the nearest clinic if symptoms occur.</p>
+      </div>
+      <div class="news-card">
+        <span class="news-tag update">Platform Update</span>
+        <div class="news-date">June 2026</div>
+        <h3>Medicine Stock Tracker now covers all 14 districts</h3>
+        <p>MedReach SL has expanded its medicine availability data to cover government and community health facilities in every district across the country.</p>
+      </div>
+      <div class="news-card">
+        <span class="news-tag tip">Health Tip</span>
+        <div class="news-date">May 2026</div>
+        <h3>Safe water practices to prevent cholera</h3>
+        <p>Boil or chlorinate drinking water, wash hands with soap regularly, and store water in clean covered containers to reduce the risk of cholera and other waterborne diseases.</p>
+      </div>
+      <div class="news-card">
+        <span class="news-tag alert">Alert</span>
+        <div class="news-date">May 2026 · Bombali District</div>
+        <h3>TB drug shortage at Makeni Regional Hospital — alternatives available</h3>
+        <p>A temporary shortage of select TB medications has been reported. Patients are advised to check the Medicine Tracker for nearby facilities with available stock.</p>
+      </div>
+      <div class="news-card">
+        <span class="news-tag update">Platform Update</span>
+        <div class="news-date">April 2026</div>
+        <h3>New CHWs onboarded in Pujehun and Kailahun</h3>
+        <p>Two new community health workers have joined the MedReach SL network, expanding coverage in Pujehun and Kailahun districts.</p>
+      </div>
+      <div class="news-card">
+        <span class="news-tag tip">Health Tip</span>
+        <div class="news-date">April 2026</div>
+        <h3>Routine immunization keeps children protected</h3>
+        <p>Parents are encouraged to keep up with routine EPI vaccinations for children under five. Check the Medicine Tracker to confirm vaccine availability at your nearest clinic.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="nav-logo"><span>M+</span> MedReach SL</div>
+      <p>A Digital Public Good connecting Sierra Leoneans to healthcare — free, open, and built for every community.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Platform</h4>
+      <ul>
+        <li><a href="clinics.html">Find a Clinic</a></li>
+        <li><a href="medicine.html">Medicine Tracker</a></li>
+        <li><a href="chw.html">CHW Directory</a></li>
+        <li><a href="news.html">Health News</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Organisation</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="license.html">License &amp; Privacy</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:info@medreachsl.org">info@medreachsl.org</a></li>
+        <li><a href="tel:+23276000001">+232 76 000 001</a></li>
+        <li><a href="about.html">Freetown, Sierra Leone</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 MedReach SL · A Digital Public Good · Freetown, Sierra Leone</span>
+    <span>Built with HTML, CSS &amp; JavaScript</span>
+  </div>
+</footer>
+
+<button class="chatbot-toggle" onclick="toggleChatbot()" aria-label="Open health assistant">💬</button>
+<div class="chatbot-window" id="chatbotWindow">
+  <div class="chatbot-header"><span>🩺 MedReach Assistant</span><button onclick="toggleChatbot()" aria-label="Close">✕</button></div>
+  <div class="chatbot-messages" id="chatbotMessages"><div class="chat-msg bot">Hi! I'm the MedReach SL health assistant. Ask me about clinics, medicine availability, or community health workers.</div></div>
+  <div class="chat-suggestions">
+    <span class="chat-chip" onclick="sendChatMessage('Find a clinic near me')">Find a clinic</span>
+    <span class="chat-chip" onclick="sendChatMessage('Is malaria medicine available?')">Malaria medicine</span>
+    <span class="chat-chip" onclick="sendChatMessage('How do I register?')">How to register</span>
+  </div>
+  <div class="chatbot-input"><input type="text" id="chatbotInput" placeholder="Type your question..." /><button onclick="sendChatMessage()">Send</button></div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

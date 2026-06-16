@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedReach SL – Healthcare for Every Community</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><span>M+</span> MedReach SL</div>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="clinics.html">Clinics</a>
+    <a href="medicine.html">Medicine</a>
+    <a href="chw.html">CHWs</a>
+    <a href="news.html">News</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="btn-nav">Login</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="active">Home</a>
+  <a href="clinics.html">Clinics</a>
+  <a href="medicine.html">Medicine</a>
+  <a href="chw.html">CHWs</a>
+  <a href="news.html">News</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html" class="btn-nav">Login</a>
+</div>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-badge">Digital Public Good · Sierra Leone</div>
+      <h1>Healthcare access<br>for <em>every community</em></h1>
+      <p>MedReach SL connects rural Sierra Leoneans to nearby clinics, medicine availability, and community health workers — on any device, on low bandwidth.</p>
+      <div class="hero-actions">
+        <a href="#register" class="btn-primary">Get started — it's free</a>
+        <a href="#how-it-works" class="btn-ghost">Learn more</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><span class="stat-num">4.2M</span><span class="stat-lbl">rural users targeted</span></div>
+        <div class="stat-item"><span class="stat-num">SDG 3</span><span class="stat-lbl">aligned</span></div>
+        <div class="stat-item"><span class="stat-num">Free</span><span class="stat-lbl">open access</span></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="card-row">
+        <div class="card-icon">📍</div>
+        <div>
+          <div class="card-label">Nearest clinic</div>
+          <div class="card-title">Bo Government Hospital</div>
+          <div class="card-sub">2.4 km away</div>
+          <div class="badge-row">
+            <span class="badge avail">Malaria medicine: available</span>
+            <span class="badge limited">ARVs: limited stock</span>
+            <span class="badge out">TB drugs: out of stock</span>
+          </div>
+        </div>
+      </div>
+      <div class="chw-row">
+        <div class="chw-avatar">FK</div>
+        <div>
+          <div class="chw-name">Fatu Koroma · CHW</div>
+          <div class="chw-meta"><span class="online-dot"></span>Available today · Bo District</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="section-eyebrow">Core Features</div>
+    <h2 class="section-title">Built for real conditions in Sierra Leone</h2>
+    <p class="section-sub">Designed to work on 2G networks, feature phones, and shared devices across urban and rural areas.</p>
+    <div class="features-grid">
+      <div class="feature-card"><div class="feature-icon">🏥</div><h3>Clinic Locator</h3><p>Find the nearest government and NGO health facilities with live distance information and service availability.</p></div>
+      <div class="feature-card"><div class="feature-icon">💊</div><h3>Medicine Availability</h3><p>Real-time stock status for essential medicines at local clinics and health posts across all districts.</p></div>
+      <div class="feature-card"><div class="feature-icon">👩‍⚕️</div><h3>CHW Directory</h3><p>Connect with verified community health workers serving your district for personalised guidance.</p></div>
+      <div class="feature-card"><div class="feature-icon">📶</div><h3>Works Offline</h3><p>Core features function without internet — critical data is cached locally on your device for areas with poor connectivity.</p></div>
+      <div class="feature-card"><div class="feature-icon">📱</div><h3>Any Device</h3><p>Fully responsive across smartphones, feature phones, tablets, and desktops — no app download required.</p></div>
+      <div class="feature-card"><div class="feature-icon">🔒</div><h3>Privacy First</h3><p>Your health data stays private. No account required to search for clinics or check medicine availability.</p></div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="hiw" id="how-it-works">
+    <div class="section-eyebrow" style="color:var(--accent)">How It Works</div>
+    <h2 class="section-title">Simple. Fast. Accessible.</h2>
+    <p class="section-sub">Four steps to getting the healthcare help you need — no registration required to search.</p>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><h3>Enter your location</h3><p>Type your district or allow location access on your device to find services near you.</p></div>
+      <div class="step"><div class="step-num">2</div><h3>Browse clinics &amp; medicines</h3><p>See what's nearby, what's in stock, and which community health workers are available.</p></div>
+      <div class="step"><div class="step-num">3</div><h3>Connect with a CHW</h3><p>Reach a verified health worker in your district for personalised, trusted guidance.</p></div>
+      <div class="step"><div class="step-num">4</div><h3>Get care</h3><p>Visit the right clinic at the right time, with the right information already in hand.</p></div>
+    </div>
+  </section>
+
+  <!-- SDG -->
+  <section class="section" id="sdg">
+    <div class="section-eyebrow">SDG Alignment</div>
+    <h2 class="section-title">A Digital Public Good for a healthier Sierra Leone</h2>
+    <p class="section-sub">MedReach SL directly supports three United Nations Sustainable Development Goals, with SDG 3 at its core.</p>
+    <div class="sdg-cards">
+      <div class="sdg-card"><div class="sdg-num">SDG 3</div><h3>Good Health &amp; Well-Being</h3><p>Bridging the gap between patients and care providers in underserved areas across Sierra Leone.</p></div>
+      <div class="sdg-card"><div class="sdg-num">SDG 10</div><h3>Reduced Inequalities</h3><p>Ensuring rural and urban populations have equal access to health information and services.</p></div>
+      <div class="sdg-card"><div class="sdg-num">SDG 17</div><h3>Partnerships for the Goals</h3><p>Built with open data shared across government, NGOs, and communities across the country.</p></div>
+    </div>
+  </section>
+
+  <!-- REGISTER -->
+  <section class="section" id="register">
+    <div class="section-eyebrow">Get Started</div>
+    <h2 class="section-title">Register for MedReach SL</h2>
+    <p class="section-sub">Create a free account to receive medicine stock alerts, CHW updates, and health advisories for your district.</p>
+    <div class="form-wrap">
+      <div class="form-row">
+        <div class="form-group"><label for="fname">First Name</label><input type="text" id="fname" placeholder="Aminata" /></div>
+        <div class="form-group"><label for="lname">Last Name</label><input type="text" id="lname" placeholder="Conteh" /></div>
+      </div>
+      <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="you@example.com" /></div>
+      <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" placeholder="+232 76 000 000" /></div>
+      <div class="form-group">
+        <label for="district">District</label>
+        <select id="district">
+          <option value="">Select your district</option>
+          <option>Western Area Urban (Freetown)</option>
+          <option>Western Area Rural</option>
+          <option>Bo</option><option>Kenema</option><option>Bombali</option><option>Kono</option>
+          <option>Tonkolili</option><option>Kambia</option><option>Port Loko</option>
+          <option>Pujehun</option><option>Bonthe</option><option>Moyamba</option><option>Kailahun</option>
+        </select>
+      </div>
+      <div class="form-group"><label for="message">Health concern or request (optional)</label><textarea id="message" placeholder="e.g. Looking for malaria treatment near Bo town…"></textarea></div>
+      <button class="form-submit" onclick="submitForm()">Create free account</button>
+      <div id="form-msg" class="form-msg"></div>
+      <p class="form-link">Already have an account? <a href="login.html">Log in here</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="nav-logo"><span>M+</span> MedReach SL</div>
+      <p>A Digital Public Good connecting Sierra Leoneans to healthcare — free, open, and built for every community.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Platform</h4>
+      <ul>
+        <li><a href="clinics.html">Find a Clinic</a></li>
+        <li><a href="medicine.html">Medicine Tracker</a></li>
+        <li><a href="chw.html">CHW Directory</a></li>
+        <li><a href="news.html">Health News</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Organisation</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="license.html">License &amp; Privacy</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:info@medreachsl.org">info@medreachsl.org</a></li>
+        <li><a href="tel:+23276000001">+232 76 000 001</a></li>
+        <li><a href="about.html">Freetown, Sierra Leone</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 MedReach SL · A Digital Public Good · Freetown, Sierra Leone</span>
+    <span>Built with HTML, CSS &amp; JavaScript</span>
+  </div>
+</footer>
+
+<!-- Chatbot Widget -->
+<button class="chatbot-toggle" onclick="toggleChatbot()" aria-label="Open health assistant">💬</button>
+<div class="chatbot-window" id="chatbotWindow">
+  <div class="chatbot-header"><span>🩺 MedReach Assistant</span><button onclick="toggleChatbot()" aria-label="Close">✕</button></div>
+  <div class="chatbot-messages" id="chatbotMessages"><div class="chat-msg bot">Hi! I'm the MedReach SL health assistant. Ask me about clinics, medicine availability, or community health workers.</div></div>
+  <div class="chat-suggestions">
+    <span class="chat-chip" onclick="sendChatMessage('Find a clinic near me')">Find a clinic</span>
+    <span class="chat-chip" onclick="sendChatMessage('Is malaria medicine available?')">Malaria medicine</span>
+    <span class="chat-chip" onclick="sendChatMessage('How do I register?')">How to register</span>
+  </div>
+  <div class="chatbot-input"><input type="text" id="chatbotInput" placeholder="Type your question..." /><button onclick="sendChatMessage()">Send</button></div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
